@@ -1,0 +1,112 @@
+object Form1: TForm1
+  Left = 2773
+  Height = 226
+  Top = 227
+  Width = 494
+  Caption = '6DMimic Connection Checker'
+  ClientHeight = 226
+  ClientWidth = 494
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 8
+    Width = 92
+    Caption = 'Configuration'
+    ParentColor = False
+  end
+  object configGrid: TStringGrid
+    Left = 8
+    Height = 72
+    Top = 32
+    Width = 240
+    ColCount = 2
+    DefaultColWidth = 120
+    FixedCols = 0
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goThumbTracking, goSmoothScroll]
+    RowCount = 3
+    ScrollBars = ssNone
+    TabOrder = 0
+    Cells = (
+      6
+      0
+      0
+      'Current IP'
+      0
+      1
+      'Listen Port'
+      0
+      2
+      'Timeout [s]'
+      1
+      0
+      '172.16.48.233'
+      1
+      1
+      '3032'
+      1
+      2
+      '10'
+    )
+  end
+  object MemoDebug: TMemo
+    Left = 8
+    Height = 81
+    Top = 136
+    Width = 240
+    Lines.Strings = (
+      'MemoDebug'
+    )
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 112
+    Width = 43
+    Caption = 'Debug'
+    ParentColor = False
+  end
+  object hearbit_signal: TShape
+    Left = 336
+    Height = 65
+    Top = 32
+    Width = 65
+    Shape = stCircle
+  end
+  object Label3: TLabel
+    Left = 312
+    Height = 15
+    Top = 8
+    Width = 122
+    Caption = 'Connection Status'
+    ParentColor = False
+  end
+  object MemoDebug2: TMemo
+    Left = 256
+    Height = 81
+    Top = 136
+    Width = 216
+    Lines.Strings = (
+      'MemoDebug'
+    )
+    TabOrder = 2
+  end
+  object UDP_heartbit: TLUDPComponent
+    Port = 0
+    OnReceive = UDP_heartbitReceive
+    Timeout = 0
+    left = 424
+    top = 48
+  end
+  object Timer: TTimer
+    OnTimer = TimerTimer
+    OnStartTimer = TimerStartTimer
+    OnStopTimer = TimerStopTimer
+    left = 456
+    top = 48
+  end
+end
