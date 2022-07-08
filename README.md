@@ -42,7 +42,17 @@ Lazarus server application to monitoring the connection with [6DMimic Grasping S
 
 ## <a name="running"></a>4. Running
 
-Clone the rep and run the ```6dmimic_heartbit_checker``` file.
+Clone the rep.
+
+Setup the environment variable $6D_MIMIC_HEARTBIT_CHECKER_ROOT, such as:
+
+```
+cd $HOME
+echo MIMIC_HEARTBIT_CHECKER_ROOT="{YOUR_PATH_TO}/6dmimic_hearbit_checker" >> .bashrc
+echo export MIMIC_HEARTBIT_CHECKER_ROOT >> .bashrc
+```
+
+Run the ```6dmimic_heartbit_checker``` file.
 
 If development is needed, setup all prerequisites and just open the ```6dmimic_heartbit_checker.lpi``` on Lazarus interface into  ```Tool Bar > Project > Open Project```
 
