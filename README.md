@@ -12,7 +12,7 @@
 <!-- GitLab Links-->
 [6DMimic Grasping Server]:https://gitlab.inesctec.pt/CRIIS/mimicgrasping/mimic_grasping_6dmimic_interface
 [LCL V2.0.6]:https://ubuntu.pkgs.org/20.04/ubuntu-universe-amd64/lcl-utils-2.0_2.0.6+dfsg-3_amd64.deb.html
-[lnetvisual V0.6.6]
+
 
 ## <a name="summary"></a>1. Summary
 
@@ -26,6 +26,13 @@
 ## <a name="overview"></a>2. Overview
 
 Lazarus server application to monitoring the connection with [6DMimic Grasping Server].
+
+<p align="center">
+  <img src="./images/interface.png" width="350">
+</p>
+<p align="center">
+6DMimic heartbit checker GUI.
+</p>
 
 ## <a name="prerequisites"></a>3. Prerequisites
 
@@ -51,8 +58,3 @@ The configuration files is placed inside the project folder, named ```config.con
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
-
-
-
-
-
