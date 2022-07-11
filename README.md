@@ -50,6 +50,7 @@ Setup the environment variable $6D_MIMIC_HEARTBIT_CHECKER_ROOT, such as:
 cd $HOME
 echo MIMIC_HEARTBIT_CHECKER_ROOT="{YOUR_PATH_TO}/6dmimic_hearbit_checker" >> .bashrc
 echo export MIMIC_HEARTBIT_CHECKER_ROOT >> .bashrc
+source .bashrc
 ```
 
 Run the ```6dmimic_heartbit_checker``` file.
